@@ -1,0 +1,222 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2EBDC;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+.menu {
+  color: #260A03;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline-block;
+  width: 189px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menuappka {
+  font-weight: 400;
+}
+
+.menupolozka {
+  font-weight: 300;
+  color:  #260A03;
+}
+
+.menupolozka:hover {
+  background: #260A03;
+  color: white;
+}
+
+.menupolozka:hover a {
+  color: white;
+}
+
+.pozadi {
+  min-height: 450px;
+  background-color: #260A03;
+  background-image: url("images/pruhlednaskola3.png");
+  background-position: center;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  position: relative;
+}
+
+.maintext {
+  color: white;
+  padding-left: 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.maintext h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+}
+
+.maintext h2 {
+  font-weight: 300;
+  font-size: 36px;
+  width: 50%;
+}
+
+.odkazbox {
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 190px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.odkazbox:hover {
+  background: #8C695D;
+}
+
+
+.ikonky img {
+  width: 55%;
+  margin: auto;
+  padding: 10px;
+}
+
+.cestovani {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.chatovani {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.dobrodruzo {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.content {
+  margin: 20px;
+
+}
+
+.content h1 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.about {
+  display: inline-block;
+  width: 60%;
+}
+
+.oddelovac {
+  height: 40px;
+  background-image: url("images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.ucitelka {
+  width: 30%;
+  display: inline-block;
+}
+
+.ucitelka img {
+  display: block;
+  border-radius: 100%;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.prices {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices td, tr{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.map {
+  display: inline-block;
+  width: 40%;
+}
+
+.conactcontent {
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+}
+
+.photos img {
+  width: 32.1%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.footer {
+  display: block;
+  background: #260A03;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}

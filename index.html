@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        #map {
+          height: 400px;
+          width: 50%;
+        }
+      </style>
+
+        <meta charset="utf-8">
+        <title>Mobilní aplikace</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="obal">
+          <div class="menu">
+            <ul>
+              <li class="menuappka">DOMINION SCHOOL</li>
+              <a href="#about"><li class="menupolozka">About</li></a>
+              <li class="menupolozka">Volunteer</li>
+              <li class="menupolozka">Contact us</li>
+              <li class="menupolozka">Photogallery</li>
+            </ul>
+          </div>
+          <div class="pozadi">
+            <div class="maintext">
+              <h1>Volunteer!</h1>
+              <h2>Volunteer in a small Ghanian school and help us make a difference!</h2>
+              <ul>
+                <li class="odkazbox">Contact us!</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ikonky">
+            <div class="cestovani">
+              <img src="images/letadlo.svg">
+              <h1>Travel & discover</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="chatovani">
+              <img src="images/bubliny.svg">
+              <h1>Find new friends</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="dobrodruzo">
+              <img src="images/mapa.svg">
+              <h1>Make a difference</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="oddelovac">
+          </div>
+          <div class="content" id="about">
+            <h1>About our school</h1>
+
+            <div class="about">
+
+              <p>
+              Dominion school is a small school with around 50 kids from a
+              village near Kaseh. Those are the children of parents, who can't
+              afford to pay for education or don't want to send their kids far
+              away from their home. The teacher (picture on right) is teaching
+              children only for little fee that is used for food during the day.
+
+              </p>
+            </div>
+            <div class="ucitelka">
+              <img src="images/teacher.jpg">
+            </div>
+          </div>
+          <div class="oddelovac">
+          </div>
+
+          <div class="content" id="volunteer">
+            <h1>Volunteer with us!</h1>
+
+            <div class="volunteer">
+
+              <p>
+
+                We would appreciate your help for any period of time.
+                We cannot afford to pay for your accomodation and food, so
+                you would have to pay these necessary costs yourself, but our
+                volunteering programme is otherwise completely free.
+                <br><br>
+                We will of course help you with accomodation and we will cook
+                for you as well. You can find the prices below.
+                <table class="prices">
+                  <tr>
+                    <td>1 week volunteering</td>
+                    <td>100 USD</td>
+                  </tr>
+                  <tr>
+                    <td>2 weeks volunteering</td>
+                    <td>160 USD</td>
+                  </tr>
+                  <tr>
+                    <td>every other week volunteering</td>
+                    <td>80 USD</td>
+                  </tr>
+                  <tr>
+                    <td>airport pickup</td>
+                    <td>40 USD</td>
+                  </tr>
+                </table>
+                <br>
+                If you will decide to help with our little project, just contact
+                us and we will arrange the airport pickup (please note that there
+                is a fee of 40 USD for the pickup). Or you can decide to travel
+                by yourself, however if you are in Ghana for the first time we
+                do not recommend it.
+                <br>
+
+              </p>
+            </div>
+          </div>
+          <div class="oddelovac">
+          </div>
+
+          <div class="content" id="contact">
+            <h1>Get in touch!</h1>
+
+            <div class="contact">
+
+              <div class="map" id="map">
+                <script>
+                  function initMap() {
+                  var kasseh = {lat: 5.904191, lng: 0.519125};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: kasseh
+                  });
+                  var marker = new google.maps.Marker({
+                    position: kasseh,
+                    map: map
+                  });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC63UErVYSLSNAUImxML-UU_yxpyIQ89a4&callback=initMap">
+                </script>
+              </div>
+
+              <div class="conactcontent">
+              <p>
+                Our school is located in Kasseh. It  is very close to the beautiful
+                beaches in Ada Foah.
+              </p>
+            </div>
+
+
+            </div>
+          </div>
+          <div class="oddelovac">
+          </div>
+          <div class="content" id="gallery">
+            <h1>Photogallery</h1>
+
+            <div class="photos">
+
+              <img src="photogallery/1.jpg"><!--
+              --><img src="photogallery/2.jpg"><!--
+              --><img src="photogallery/3.jpg"><!--
+              --><img src="photogallery/4.jpg"><!--
+              --><img src="photogallery/6.jpg"><!--
+              --><img src="photogallery/7.jpg"><!--
+              --><img src="photogallery/8.jpg"><!--
+              --><img src="photogallery/9.jpg"><!--
+              --><img src="photogallery/5.jpg">
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="footer">
+            Design by <a href="https://github.com/Paffilda">Paffilda</a>
+          </div>
+        </div><!-- konec .obal -->
+    </body>
+</html>
